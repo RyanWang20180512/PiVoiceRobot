@@ -17,7 +17,8 @@ from configparser import ConfigParser
 from MatrixLedModule.Matrix_Led import Matrix_Led
 
 cp=ConfigParser()
-cp.read('./Configs/MainApp.cfg')
+cp.read('/home/pi/VoiceRobot/Configs/MainApp.cfg')
+print(cp.sections())
 section=cp.sections()[0]
 WIDTH=int(cp.get(section,'WIDTH'))
 CHANNELS=int(cp.get(section,'CHANNELS'))

@@ -10,7 +10,7 @@ class BaiduAipSpeech:
     '''
     def __init__(self):
         cp=ConfigParser()
-        cp.read('./Configs/baiduAipApp.cfg')
+        cp.read('/home/pi/VoiceRobot/Configs/baiduAipApp.cfg')
         #print(len(cp.sections()))
         section=cp.sections()[0]
         self._APP_ID=cp.get(section,'APP_ID')

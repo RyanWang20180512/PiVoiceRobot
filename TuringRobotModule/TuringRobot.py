@@ -15,7 +15,7 @@ class TuringRobot:
     '''
     def __init__(self):
         cp=ConfigParser()
-        cp.read('./Configs/turingRobotApp.cfg')
+        cp.read('/home/pi/VoiceRobot/Configs/turingRobotApp.cfg')
         section=cp.sections()[0]
         self._URL=cp.get(section,'URL')
         self._API_KEY=cp.get(section,'API_KEY')
